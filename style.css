@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "League Gothic";
+    src: url("/fonts/LeagueGothic-Regular.ttf");
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Questrial";
+    src: url("/fonts/Questrial-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #140B42;
+}
+
+h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Questrial", sans-serif;
+    font-size: 30px;
+}
+
+a {
+    font-family: "Questrial", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.header {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#headerlogo {
+    width: 100px;
+    height: 100px;
+}
+
+.fontheader {
+    padding: 10px 20px 10px 20px;
+    color: #FF00B6;
+    cursor: pointer;
+}
+
+.fontheaderthispage {
+    padding: 10px 20px 10px 20px;
+    color : #C9FF46;
+    cursor: pointer;
+    border-width: 1px;
+    border: solid;
+    border-radius: 100px;
+}
