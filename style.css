@@ -1,14 +1,18 @@
 @font-face {
-    font-family: "League Gothic";
-    src: url("/fonts/LeagueGothic-Regular.ttf");
+    font-family: "League Spartan";
+    src: url("/fonts/LeagueSpartan.ttf");
 }
 @font-face {
-    font-family: "Bebas Neue";
-    src: url("/fonts/BebasNeue-Regular.ttf");
+    font-family: "Inter";
+    src: url("/fonts/Inter.ttf");
 }
 @font-face {
-    font-family: "Questrial";
-    src: url("/fonts/Questrial-Regular.ttf");
+    font-family: "Inspiration";
+    src: url("/fonts/Inspiration.ttf");
+}
+@font-face {
+    font-family: "Kapakana";
+    src: url("/fonts/Kapakana.ttf");
 }
 
 * {
@@ -21,22 +25,19 @@ body {
 }
 
 h1 {
-    font-family: "League Gothic", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-size: 50px;
 }
 
-h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
-}
-
 p {
-    font-family: "Questrial", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 30px;
+    color: #FFFFFF;
 }
 
 a {
-    font-family: "Questrial", sans-serif;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
     font-size: 30px;
     text-decoration: none;
 }
@@ -44,6 +45,14 @@ a {
 .header {
     padding: 50px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headermenudiv {
+    display: flex;
+    width: 60%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -54,17 +63,16 @@ a {
     height: 100px;
 }
 
-.fontheader {
-    padding: 10px 20px 10px 20px;
-    color: #FF00B6;
+.headermenu {
     cursor: pointer;
+    padding: 10px 20px 10px 20px;
 }
 
-.fontheaderthispage {
-    padding: 10px 20px 10px 20px;
-    color : #C9FF46;
+.headermenuhome {
     cursor: pointer;
+    padding: 10px 20px 10px 20px;
     border-width: 1px;
     border: solid;
     border-radius: 100px;
+    border-color: #FF00B6;
 }
