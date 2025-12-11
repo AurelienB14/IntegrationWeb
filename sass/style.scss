@@ -452,8 +452,12 @@ $hero-images: (
     flex-direction: row;
 }
 
-.abmecv, .abmeervices {
+.abmecv, .abmeservices {
     display: flex;
     justify-content: center;
     width: 50%;
+
+    h1 {
+        font-size: 12vw;
+    }
 }
