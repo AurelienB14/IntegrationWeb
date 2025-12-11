@@ -403,6 +403,53 @@ a {
   width: 60%;
 }
 
-.footerbar4 {
 
+
+
+/* ---------------- ABOUT ME PAGE ------------------- */
+
+
+
+
+.abmetitle {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: clamp(125px, 30vh, 250px);
+}
+
+.abmetitle h1 {
+  font-size: 8vw;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+
+/* DESCRIPTION */
+
+
+.abmedescription {
+  display: flex;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  flex-direction: row;
+}
+
+.abmedescriptiongauche {
+  width: 50%;
+}
+
+.abmedescriptiongauche p {
+  width: 75%;
+  color: #FFFFFF;
+  font-size: 1.25vw;
+}
+
+.abmedescriptiondroite {
+  width: 50%;
+}
+
+.abmedescriptiondroite p {
+  color: #FFFFFF;
+  width: 75%;
+  font-size: 1.25vw;
 }
