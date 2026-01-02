@@ -1,0 +1,96 @@
+.abmetitle {
+    padding: 0 2.5%;
+    margin-top: clamp(125px, 30vh, 250px);
+
+    h1 {
+        font-size: 8vw;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+}
+
+
+// DESCRIPTION
+
+
+.abmedescription {
+    display: flex;
+    padding: 0 2.5%;
+}
+
+.abmedescriptiongauchediv, .abmedescriptiondroitediv {
+    display: flex;
+    width: 50%;
+}
+
+.abmedescriptiondroitediv {
+    justify-content: center;
+}
+
+.abmedescriptiongauche, .abmedescriptiondroite {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+    p {
+        width: 75%;
+        color: $color-white;
+        font-size: 1.25vw;
+    }
+}
+
+.abmedescriptiongauche {
+    justify-content: end;
+}
+
+
+// CV SERVICES
+
+
+.abmecvservices {
+    display: flex;
+    padding: 0 2.5%;
+    margin-top: clamp(50px, 15vh, 100px);
+    flex-direction: row;
+}
+
+.abmecv {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+.abmeservices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+.abmeservicesdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+@each $i in 1, 2, 3 {
+    .abmeservicesdiv#{$i} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+
+        p {
+            color: $color-white;
+            font-size: 1vw;
+            font-weight: 200;
+        }
+    }
+}

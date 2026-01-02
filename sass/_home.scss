@@ -1,0 +1,193 @@
+.hero {
+    padding: 0 2.5%;
+
+    img {
+        position: absolute;
+        width: 12%;
+        height: auto;
+    }
+}
+
+.herodiv {
+    margin: clamp(125px, 30vh, 250px) 0 clamp(125px, 30vh, 250px) clamp(100px, 14%, 200px);
+    display: flex;
+    flex-direction: column;
+}
+
+#herotitle {
+    font-size: 12vw;
+}
+
+$hero-images: (
+    1: (35%, 5%, -2),
+    2: (60%, 10%, -1),
+    3: (10%, 40%, -1),
+    4: (20%, 30%, -2),
+    5: (40%, 40%, -1),
+    6: (60%, 45%, -2),
+    7: (10%, 65%, -2),
+    8: (15%, 85%, -2),
+    9: (40%, 75%, -1),
+    10: (60%, 80%, -2)
+);
+
+@each $num, $props in $hero-images {
+    #heroimg#{$num} {
+        top: nth($props, 1);
+        left: nth($props, 2);
+        z-index: nth($props, 3);
+    }
+}
+
+
+// BAR
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.bar {
+    overflow: hidden;
+    background-color: $color-bar;
+    color: $color-bg;
+    padding: 20px 0;
+    position: relative;
+}
+
+.bar-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+
+    span {
+        font-family: $font-inter;
+        font-size: 20px;
+        padding-right: 0.5rem;
+        white-space: nowrap;
+    }
+}
+
+
+// ABOUT ME
+
+
+.aboutme {
+    padding: 0 2.5%;
+    margin-top: clamp(75px, 20vh, 150px);
+}
+
+.aboutmetitlediv {
+    @include flex-center;
+}
+
+#aboutmetitle {
+    font-size: 12vw;
+    font-weight: 500;
+}
+
+.aboutmediv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutmep1div, .aboutmep2div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+    white-space: nowrap;
+}
+
+.aboutmep1div {
+    align-items: end;
+    justify-content: end;
+}
+
+.aboutmep2div {
+    align-items: start;
+    justify-content: end;
+}
+
+.aboutmeimagediv {
+    width: 33%;
+    @include flex-center;
+}
+
+.aboutmebuttondiv {
+    margin-top: clamp(50px, 10vh, 100px);
+    @include flex-center;
+
+    a {
+        @include button-base;
+        color: $color-white;
+        border-color: $color-blue;
+
+        &:hover {
+            background-color: $color-blue;
+        }
+    }
+}
+
+
+// PROJETS
+
+
+.projets {
+    display: flex;
+    margin-top: clamp(100px, 25vh, 200px);
+}
+
+.projetsgauchediv {
+    width: 50%;
+}
+
+.projetstitlediv {
+    margin-bottom: clamp(100px, 25vh, 200px);
+}
+
+#projetstitle {
+    padding-left: 5%;
+    font-size: 8vw;
+    font-weight: 400;
+}
+
+.projetspackgroundimagediv img {
+    width: 200%;
+}
+
+.projetsbuttondiv {
+    margin-top: clamp(50px, 10vh, 100px);
+    @include flex-center;
+
+    a {
+        color: $color-white;
+        padding: 10px 10%;
+        border: 0.5px solid $color-green;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-green;
+            color: $color-black;
+        }
+    }
+}
+
+.projetsdiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: $color-grey;
+    align-items: center;
+    gap: 25px;
+
+    img {
+        width: 90%;
+        height: auto;
+        cursor: pointer;
+    }
+}

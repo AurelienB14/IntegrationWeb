@@ -1,0 +1,82 @@
+.projectTwoPart1 {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-evenly;
+
+    img {
+        width: 35%;
+    }
+    p {
+        color: $color-white;
+        font-size: 5vw;
+        width: 55%;
+    }
+    margin-bottom: clamp(75px, 25vh, 150px);
+}
+
+
+// Part 2
+
+
+.projectTwoPart2haut {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    p {
+        color: $color-white;
+        font-size: 1.4vw;
+        width: 40%;
+        font-weight: 200;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+.projectTwoPart2bas {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    p {
+        color: $color-white;
+    }
+}
+
+.projectTwoPart2basgauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.projectTwoPart2basdroite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+
+// Image du bas
+
+
+.projectTwoPart3 {
+    margin-top: clamp(75px, 25vh, 150px);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    img {
+        width: 45%;
+    }
+}
