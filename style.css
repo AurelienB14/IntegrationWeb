@@ -671,4 +671,31 @@ body {
   width: 45%;
 }
 
+.ProjectBasPage {
+  margin-top: clamp(100px, 40vh, 200px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ProjectBarTrait {
+  width: 100%;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.ProjectBasPageInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: clamp(25px, 10vh, 50px);
+  margin-bottom: clamp(25px, 10vh, 50px);
+}
+.ProjectBasPageInfo p {
+  color: #FFFFFF;
+  font-size: 5vw;
+}
+
 /*# sourceMappingURL=style.css.map */
