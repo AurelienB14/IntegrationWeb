@@ -1,0 +1,89 @@
+.projectOnePart1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.projectOnePart1Gauche {
+    display: flex;
+    width: 50%;
+    img {
+        width: 60%;
+    }
+}
+
+.projectOnePart1Droite {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    p {
+        color: $color-white;
+        font-size: 5vw;
+        width: 90%;
+    }
+    span {
+        color: $color-white;
+        font-size: 1.25vw;
+        margin-top: 20px;
+        width: 60%;
+        font-weight: 300;
+    }
+    img {
+        position:absolute;
+        width: 25%;
+        margin-top: 30px;
+        right: 5%;
+        top: 250px;
+        z-index: -1;
+    }
+}
+
+
+// Part 2 
+
+
+.projectOnePart2 {
+    display: flex;
+    margin-top: clamp(100px, 40vh, 200px);
+    margin-bottom: clamp(25px, 10vh, 50px);
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-direction: column;
+}
+
+.projectOnePart2Haut {
+    display: flex;
+    width: 100%;
+    img {
+        width: 40%;
+    }
+    #projectOnePart2Haut2 {
+        position: absolute;
+        left: 30%;
+        top: 130%;
+    }
+}
+
+.projectOnePart2Milieu {
+    display: flex;
+    margin-top: clamp(50px, 20vh, 100px);
+    width: 100%;
+    justify-content: space-between;
+    #projectOnePart2Milieu2 {
+        position: absolute;
+        left: 20%;
+        top: 180%;
+    }
+    p {
+        font-size: 3vw;
+        color: $color-white;
+        width: 35%;
+        padding-top: 15%;
+    }
+}
+
+.projectOnePart2Bas {
+    display: flex;
+    justify-content: center;
+}

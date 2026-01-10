@@ -56,12 +56,25 @@
 
 .abmecv {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 50%;
-
-    h1 {
-        font-size: 8vw;
+    align-items: center;
+    border-radius: 1000px;
+    border-color: #002AFF;
+    border-width: 5px;
+    border-style: solid;
+    p {
+        font-size: 1vw;
     }
+}
+
+.abmecvtrait {
+    margin-top: 10px;
+    width: 50%;
+    height: 5px;
+    background-color: $color-white;
 }
 
 .abmeservices {
