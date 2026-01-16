@@ -7,5 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }, (index + 1) * 300);
     });
 
+    // 2. Burger Menu Toggle
+    const burgerMenu = document.getElementById('burger-menu');
+    const navMenu = document.querySelector('.headermenudiv');
+
+    if (burgerMenu && navMenu) {
+        burgerMenu.addEventListener('click', () => {
+            burgerMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                burgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
 
 });
