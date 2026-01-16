@@ -7,11 +7,13 @@
     img {
         width: 35%;
     }
+
     p {
         color: $color-white;
         font-size: 5vw;
         width: 55%;
     }
+
     margin-bottom: clamp(75px, 25vh, 150px);
 }
 
@@ -42,6 +44,7 @@
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
+
     p {
         color: $color-white;
     }
@@ -76,7 +79,7 @@
     justify-content: space-around;
     padding-left: 5%;
     padding-right: 5%;
-    
+
     img {
         width: 45%;
     }
@@ -111,5 +114,54 @@
     p {
         color: $color-white;
         font-size: 5vw;
+    }
+}
+
+.floating-illustration {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    width: 450px;
+    right: 700px;
+    top: 1350px;
+
+}
+
+@media (max-width: 768px) {
+
+    .projectTwoPart1,
+    .projectTwoPart2haut,
+    .projectTwoPart2bas,
+    .projectTwoPart3 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+
+        img,
+        p {
+            width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .projectTwoPart2basgauche,
+    .projectTwoPart2basdroite {
+        width: 100%;
+    }
+
+    .projectTwoPart2basdroite p {
+        font-size: 24px;
+    }
+
+    .ProjectBasPageInfo p {
+        font-size: 32px;
+    }
+
+    .floating-illustration {
+        display: none;
     }
 }

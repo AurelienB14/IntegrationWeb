@@ -8,6 +8,7 @@
 .projectOnePart1Gauche {
     display: flex;
     width: 50%;
+
     img {
         width: 60%;
     }
@@ -17,11 +18,13 @@
     display: flex;
     width: 50%;
     flex-direction: column;
+
     p {
         color: $color-white;
         font-size: 5vw;
         width: 90%;
     }
+
     span {
         color: $color-white;
         font-size: 1.25vw;
@@ -29,8 +32,9 @@
         width: 60%;
         font-weight: 300;
     }
+
     img {
-        position:absolute;
+        position: absolute;
         width: 25%;
         margin-top: 30px;
         right: 5%;
@@ -55,9 +59,11 @@
 .projectOnePart2Haut {
     display: flex;
     width: 100%;
+
     img {
         width: 40%;
     }
+
     #projectOnePart2Haut2 {
         position: absolute;
         left: 30%;
@@ -70,11 +76,13 @@
     margin-top: clamp(50px, 20vh, 100px);
     width: 100%;
     justify-content: space-between;
+
     #projectOnePart2Milieu2 {
         position: absolute;
         left: 20%;
         top: 180%;
     }
+
     p {
         font-size: 3vw;
         color: $color-white;
@@ -86,4 +94,60 @@
 .projectOnePart2Bas {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .projectOnePart1 {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projectOnePart1Gauche,
+    .projectOnePart1Droite {
+        width: 100%;
+        align-items: center;
+    }
+
+    .projectOnePart1Gauche img {
+        width: 100%;
+    }
+
+    .projectOnePart1Droite {
+        p {
+            font-size: 32px;
+            width: 100%;
+        }
+
+        span {
+            font-size: 16px;
+            width: 100%;
+        }
+
+        img {
+            display: none;
+        }
+
+        // Hide overlapping absolute image on mobile
+    }
+
+    .projectOnePart2Haut,
+    .projectOnePart2Milieu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 100% !important;
+            position: static !important;
+        }
+
+        p {
+            width: 100%;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
 }

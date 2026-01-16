@@ -5,6 +5,8 @@
         position: absolute;
         width: 12%;
         height: auto;
+        opacity: 0;
+        transition: opacity 0.8s ease-out;
     }
 }
 
@@ -39,6 +41,36 @@ $hero-images: (
     }
 }
 
+@media (max-width: 768px) {
+    .hero {
+        img {
+            display: none; // Hide all by default on mobile
+            width: 25%; // Make them larger on mobile
+        }
+
+        #heroimg2 {
+            // Left position
+            display: block;
+            top: 60%;
+            left: 5%;
+        }
+
+        #heroimg5 {
+            // Middle position
+            display: block;
+            top: 20%;
+            left: 37.5%;
+        }
+
+        #heroimg10 {
+            // Right position
+            display: block;
+            top: 60%;
+            left: 70%;
+        }
+    }
+}
+
 
 // BAR
 
@@ -47,6 +79,7 @@ $hero-images: (
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
@@ -95,7 +128,8 @@ $hero-images: (
     justify-content: space-between;
 }
 
-.aboutmep1div, .aboutmep2div {
+.aboutmep1div,
+.aboutmep2div {
     width: 33%;
     display: flex;
     flex-direction: column;
